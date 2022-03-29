@@ -1,5 +1,5 @@
 var tombSrc = [];
-
+var kepTomb = [];
 function  ID(elem){
     return document.getElementById(elem);
 }
@@ -9,6 +9,8 @@ window.addEventListener("load", init);
 function init(){
     ID("title").innerHTML = "Koncsik Benedek, Dervalics Attila";
     eventBe();
+    kiemel();
+    keretHover();
     rarakKiemel();
 }
 
@@ -34,7 +36,15 @@ function eventBe(){
 
 
 
+function keretHover(){
 
+
+    kepTomb.push();
+    for (let index = 0; index < tombSrc.length; index++) {
+        console.log(kepTomb[index])  
+    }
+
+}
 function rarakKiemel(){
     console.log("rak mkiemel");
     for (let index = 0; index < 3; index++) {
@@ -50,12 +60,4 @@ function kiemel(){
             i++;
         }
         $("img")[i].style.border = "2px solid red";
-}
-
-function kiemelLeszed(){
-    for (let index = 0; index < 3; index++) {
-        $("img")[index].style.border = "0px solid red";
-        
-    }
-
 }
