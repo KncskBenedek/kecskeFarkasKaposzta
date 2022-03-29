@@ -9,8 +9,9 @@ window.addEventListener("load", init);
 function init(){
     ID("title").innerHTML = "Koncsik Benedek, Dervalics Attila";
     eventBe();
-    //kiemel();
+    kiemel();
     keretHover();
+    rarakKiemel();
 }
 
 function $(elem){
@@ -41,6 +42,22 @@ function keretHover(){
     for (let index = 0; index < tombSrc.length; index++) {
         console.log(kepTomb[index])  
     }
+
+
+function rarakKiemel(){
+    for (let index = 0; index < 3; index++) {
+        $("img")[index].addEventListener("mouseOn", kiemel);
+    }
+}
+
+function kiemel(){
+    var i = 0;
+        var melyik = event.target.src;
+        while (i < 3 && !(melyik.includes($("img"[i])))) {
+            i++;
+        }
+        $("img")[i].style.border = "2px solid red";
+        console.log("piros");
 }
 function mozgatas(){
 
