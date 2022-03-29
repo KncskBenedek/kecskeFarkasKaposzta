@@ -8,3 +8,6 @@ function init(){
     ID("title").innerHTML = "Koncsik Benedek, Dervalics Attila";
 }
 
+function keretHover({
+    
+})
