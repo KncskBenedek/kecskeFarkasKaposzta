@@ -1,5 +1,5 @@
 var tombSrc = [];
-var kepTomb = [];
+
 function  ID(elem){
     return document.getElementById(elem);
 }
@@ -17,6 +17,7 @@ function init(){
 function $(elem){
     return document.querySelectorAll(elem);
 }
+var kepTomb = $("#bal img")
 
 function tombAd(){
     var src = event.target.src;
@@ -39,10 +40,7 @@ function eventBe(){
 function keretHover(){
 
 
-    kepTomb.push();
-    for (let index = 0; index < tombSrc.length; index++) {
-        console.log(kepTomb[index])  
-    }
+
 
 }
 function rarakKiemel(){
@@ -54,7 +52,7 @@ function rarakKiemel(){
 function kiemel(){
     var i = 0;
         var melyik = event.target.src;
-        while (i < 3 && !(melyik.includes($("img"[i])))) {
+        while (i < 3 && !(melyik.includes($("img")[i]))) {
             i++;
         }
         $("img")[i].style.border = "2px solid red";
