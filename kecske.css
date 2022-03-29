@@ -1,0 +1,50 @@
+
+ header{
+    border: 1px solid black;
+    margin-bottom: 20px;
+ }
+ header h1{
+     text-align: center;
+ }
+
+footer p{
+    text-align: center;
+    border: 1px solid black;
+    background-color:#71CEFF;
+}
+#bal, #jobb{
+ min-width: 200px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.container aside{
+    max-width: 20%;
+}
+.container article{
+    background-image: url(kepek/csonak.png);
+    background-repeat: no-repeat;
+    background-color:#71CEFF;
+    width: 50%;
+    background-position:center ;
+}
+.container aside img{
+    width: 35%;
+}
+article,aside{
+    border: 1px solid black;
+    height: 600px;
+}
+.kepek{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
+
