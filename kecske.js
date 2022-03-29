@@ -9,6 +9,7 @@ window.addEventListener("load", init);
 function init(){
     ID("title").innerHTML = "Koncsik Benedek, Dervalics Attila";
     eventBe();
+    kiemel();
 }
 
 function $(elem){
@@ -29,4 +30,10 @@ function eventBe(){
     for (let index = 0; index < 3; index++) {
         $("img")[index].addEventListener("click", tombAd);
     }
+}
+
+
+function kiemel(){
+    $("img").addEventListener("")
+    
 }
