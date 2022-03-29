@@ -38,12 +38,13 @@ function eventBe(){
 
 function keretHover(){
 
+
     kepTomb.push();
     for (let index = 0; index < tombSrc.length; index++) {
         console.log(kepTomb[index])  
     }
 
-
+}
 function rarakKiemel(){
     for (let index = 0; index < 3; index++) {
         $("img")[index].addEventListener("mouseOn", kiemel);
@@ -58,9 +59,6 @@ function kiemel(){
         }
         $("img")[i].style.border = "2px solid red";
         console.log("piros");
-}
-function mozgatas(){
-
 }
 
 
